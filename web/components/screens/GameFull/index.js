@@ -16,24 +16,24 @@ export default class GameFull extends Component<Props> {
 
     return (
       <Screen
-        title="Join game"
+        title="加入游戏"
         message={
           <Fragment>
             <p>
-              <strong>Game full.</strong>
+              <strong>游戏满员啦。</strong>
             </p>
             <p>
-              You can watch, or
+              你可以观看对战，或者
               <br />
               <Link href="/">
-                <a>join another game</a>
+                <a>加入其他游戏</a>
               </Link>
               .
             </p>
           </Fragment>
         }
         actions={[
-          <Button disabled>Join</Button>,
+          <Button disabled>加入</Button>,
           <Button
             disabled={disabled}
             bgColor="#fff"
@@ -41,7 +41,7 @@ export default class GameFull extends Component<Props> {
             colorDisabled="rgba(52, 73, 95, 0.6)"
             onClick={onWatch}
           >
-            Watch
+            观看
           </Button>,
         ]}
       />

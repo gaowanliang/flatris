@@ -24,20 +24,20 @@ export default class Invite extends Component<Props> {
           <Fragment>
             <p>
               <strong>
-                Playing with a <del>friend</del>
+                和 <del>朋友</del>
                 <br />
-                rival is more fun!
+                竞争更有趣！
               </strong>
             </p>
             <div className="copy">
               <CopyGameLinkButton disabled={disabled} gameId={gameId} />
             </div>
             <p>
-              Send the link and
+              发送邀请链接并
               <br />
-              warm up until the
+              在这热热身，
               <br />
-              other person arrives.
+              直到等到另一个人来。
             </p>
             <style jsx>{`
               .copy {
@@ -50,7 +50,7 @@ export default class Invite extends Component<Props> {
         }
         actions={[
           <Button disabled={disabled} onClick={onPlay}>
-            Play
+            开整
           </Button>,
         ]}
       />

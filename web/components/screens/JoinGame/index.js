@@ -16,23 +16,23 @@ export default class JoinGame extends Component<Props> {
 
     return (
       <Screen
-        title="Join game"
+        title="加入游戏"
         message={
           <Fragment>
             <p>
-              <strong>Room for one more!</strong>
+              <strong>就这个房间</strong>
             </p>
             <p>
-              You can watch, or
+              你可以看别人和TA对战，
               <br />
-              you can play.
+              也可以自己和TA对战。
             </p>
-            <p>What will it be?</p>
+            <p>你想怎么玩？</p>
           </Fragment>
         }
         actions={[
           <Button disabled={disabled} onClick={onJoin}>
-            Join
+            加入
           </Button>,
           <Button
             disabled={disabled}
@@ -41,7 +41,7 @@ export default class JoinGame extends Component<Props> {
             colorDisabled="rgba(52, 73, 95, 0.6)"
             onClick={onWatch}
           >
-            Watch
+            观看
           </Button>,
         ]}
       />

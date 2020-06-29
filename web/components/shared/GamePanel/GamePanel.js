@@ -44,7 +44,7 @@ export default class GamePanel extends Component<Props> {
         <div className="title">
           <h1>Flatris</h1>
         </div>
-        <div className="next-label">Next</div>
+        <div className="next-label">下一个</div>
         <div className={getNextTetrominoClass(nextTetromino)}>
           <Tetromino
             key={nextTetromino}

@@ -14,32 +14,32 @@ export default class ZeroSum extends Component<Props> {
 
     return (
       <Screen
-        title="Zero sum"
+        title="零和博弈"
         message={
           <Fragment>
             <p>
               <span className="highlight">
-                Every line you clear is
+                你清除的每一行都会
                 <br />
-                added to your opponent
+                添加到你的对手的
                 <br />
-                and vice versa.
+                游戏区域，反之亦然。
               </span>
             </p>
             <p>
               <strong>
-                This is not a friendly
+                这不是一场
                 <br />
-                match.
+                友谊赛。
               </strong>{' '}
-              One player's
+              一方会输
               <br />
-              loss is the other's win!
+              而另一方会赢!
             </p>
-            <p>Play fast to survive.</p>
+            <p>为了活下去，你得快点</p>
           </Fragment>
         }
-        actions={[<Button onClick={onNext}>Aha!</Button>]}
+        actions={[<Button onClick={onNext}>啊哈!</Button>]}
       />
     );
   }

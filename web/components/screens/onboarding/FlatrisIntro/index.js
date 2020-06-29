@@ -14,38 +14,39 @@ export default class FlatrisIntro extends Component<Props> {
 
     return (
       <Screen
-        title="Greetings!"
+        title="介绍"
         message={
           <Fragment>
             <p>
               <span className="highlight">
-                Flatris is a fast-paced
+                Flatris 是一个快节奏的
                 <br />
-                two-player game.
+                双人游戏。
                 <br />
               </span>
             </p>
             <p>
-              <strong>Geometric shapes</strong>
+              <strong>各种方块</strong>
               <br />
-              fall from above until
+              会从上面落下，
               <br />
-              they hit the ground.
+              ，直到落到地面。
             </p>
             <p>
-              Place them to{' '}
+              把它们{' '}
               <strong>
-                form
+                排成
                 <br />
-                lines
+                一行
               </strong>
-              , which clears
+              ，这样可以清除
               <br />
-              blocks and buys time!
+              这行并赢得分数!
             </p>
+            <span className="highlight">中文汉化由<strong>高玩梁</strong>制作</span>
           </Fragment>
         }
-        actions={[<Button onClick={onNext}>I see</Button>]}
+        actions={[<Button onClick={onNext}>我知道了</Button>]}
       />
     );
   }

@@ -190,13 +190,13 @@ class Dashboard extends Component<Props, LocalState> {
               href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfB66-8K8gWrj-Mo9sVYqKSgzTwCekXkMlL0zcBdKcSDH6IFA/viewform"
               target="_blank"
             >
-              <Button bgColor={COLORS.T}>Feedback</Button>
+              <Button bgColor={COLORS.T}>反馈</Button>
             </a>
           </div>
           <div className="header">
             <div className="left new-game-button">
               <Link href="/new">
-                <Button>New game</Button>
+                <Button>创建新游戏</Button>
               </Link>
             </div>
             <div className="right">
@@ -205,7 +205,7 @@ class Dashboard extends Component<Props, LocalState> {
                   href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfB66-8K8gWrj-Mo9sVYqKSgzTwCekXkMlL0zcBdKcSDH6IFA/viewform"
                   target="_blank"
                 >
-                  <Button bgColor={COLORS.T}>Feedback</Button>
+                  <Button bgColor={COLORS.T}>反馈</Button>
                 </a>
               </div>
               <div className="view-source">
@@ -228,23 +228,23 @@ class Dashboard extends Component<Props, LocalState> {
           {!hasAnyGames && (
             <Fragment>
               <div className="message">
-                Create a game and break the silence!
+                新建一个游戏，打破沉默吧！
               </div>
               {this.renderGameGrid([], true)}
             </Fragment>
           )}
           {hasOwnGames && (
             <Fragment>
-              <div className="message">Your games</div>
+              <div className="message">你的游戏</div>
               {this.renderGameGrid(ownGames, !hasOtherGames)}
             </Fragment>
           )}
           {hasOtherGames && (
             <Fragment>
               {!hasOwnGames ? (
-                <div className="message">Join a game or create a new one</div>
+                <div className="message">加入游戏或创建新游戏</div>
               ) : (
-                <div className="message">Other games</div>
+                <div className="message">其他游戏</div>
               )}
               {this.renderGameGrid(otherGames, true)}
             </Fragment>

@@ -33,7 +33,7 @@ export default class GameOver extends Component<Props> {
         actions={[
           <Shake time={otherPlayer.ping}>
             <Button disabled={disabled} onClick={onRestart}>
-              Again
+              再来
             </Button>
           </Shake>,
         ]}
@@ -43,22 +43,22 @@ export default class GameOver extends Component<Props> {
 }
 
 function getMultiTitle(curPlayer: Player) {
-  return curPlayer.status === 'LOST' ? 'You lost!' : 'You won!';
+  return curPlayer.status === 'LOST' ? '你输了！' : '你赢了!';
 }
 
 function getMultiMessage(curPlayer: Player, otherPlayer: Player) {
   const maxLosses = Math.max(curPlayer.losses, otherPlayer.losses);
   const numWins = maxLosses + 1;
   const numGames = numWins * 2 - 1;
-  const bestOutOfMsg = `Best ${numWins} out of ${numGames}?`;
+  const bestOutOfMsg = `最好来个 ${numGames} 局 ${numWins} 胜制 ?`;
 
   if (curPlayer.status === 'LOST') {
     return (
       <Fragment>
         <p>
-          Oh well... better luck
+          好吧... 祝你
           <br />
-          next time.
+          下次好运。
         </p>
         <p>
           <strong>{bestOutOfMsg}</strong>
@@ -69,7 +69,7 @@ function getMultiMessage(curPlayer: Player, otherPlayer: Player) {
 
   return (
     <Fragment>
-      <p>You kicked ass.</p>
+      <p>你把TA的屁股踢翻了！</p>
       <p>
         <strong>{bestOutOfMsg}</strong>
       </p>

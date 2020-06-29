@@ -30,20 +30,22 @@ export default class Error extends Component<Props> {
   render404() {
     return (
       <Screen
-        title="Not Found"
+        title="没找到啊"
         message={
           <Fragment>
-            <p>Hmm...</p>
+            <p>嗯嗯...</p>
             <p>
-              It's either gone or
+              不是TA离开了，
               <br />
-              it never was ¯\_(ツ)_/¯
+              就是这里根本
+              <br />
+              没存在过 ╮(╯▽╰)╭
             </p>
           </Fragment>
         }
         actions={[
           <Link href="/">
-            <Button>Home</Button>
+            <Button>主页</Button>
           </Link>,
         ]}
       />
@@ -55,11 +57,11 @@ export default class Error extends Component<Props> {
 
     return (
       <Screen
-        title="Oh Noes!"
+        title="哦，糟了!"
         message={
           <Fragment>
             <p>
-              <strong>Something broke :/</strong>
+              <strong>啥东西坏了 (っ °Д °;)っ</strong>
             </p>
             {error && (
               <Fragment>
@@ -67,26 +69,26 @@ export default class Error extends Component<Props> {
                   <CopyButton
                     disabled={false}
                     copyText={`${error.message}\n\n${error.stack}`}
-                    defaultLabel="Copy error"
-                    successLabel="Error copied!"
-                    errorLabel="Copy failed :("
+                    defaultLabel="复制错误信息"
+                    successLabel="错误已复制!"
+                    errorLabel="复制失败"
                   />
                 </div>
                 <p>
                   <span className="highlight">
-                    Please{' '}
+                    请{' '}
                     <a href={getGithubIssueUrl(error)} target="_blank">
-                      click here
+                      点这
                     </a>{' '}
-                    to
+                    来分享
                     <br />
-                    share what happened.
+                    你出的问题
                   </span>
                 </p>
                 <p>
-                  At least this page
+                  至少这一页
                   <br />
-                  works, right?
+                  还有用吧？
                 </p>
               </Fragment>
             )}
@@ -101,7 +103,7 @@ export default class Error extends Component<Props> {
         }
         actions={[
           <Link href="/">
-            <Button>Home</Button>
+            <Button>主页</Button>
           </Link>,
         ]}
       />

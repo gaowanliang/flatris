@@ -19,25 +19,25 @@ export default class NewGame extends Component<Props> {
 
     return (
       <Screen
-        title="New game"
+        title="新游戏"
         message={
           <Fragment>
             <p>
               <strong>
-                Invite a friend to
+                邀请一个朋友参加战斗，
                 <br />
-                battle, or play solo.
+                或者先一个人玩。
               </strong>
             </p>
             <div className="copy">
               <CopyGameLinkButton disabled={disabled} gameId={gameId} />
             </div>
             <p>
-              Send the link and
+              发送邀请链接并
               <br />
-              warm up until the
+              在这热热身，
               <br />
-              other person arrives.
+              直到等到另一个人来。
             </p>
             <style jsx>{`
               .copy {
@@ -50,7 +50,7 @@ export default class NewGame extends Component<Props> {
         }
         actions={[
           <Button disabled={disabled} onClick={onPlay}>
-            Play
+            开整
           </Button>,
         ]}
       />

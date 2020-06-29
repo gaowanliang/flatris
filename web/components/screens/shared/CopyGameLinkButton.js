@@ -19,9 +19,9 @@ export default class CopyGameLinkButton extends Component<Props> {
       <CopyButton
         disabled={disabled}
         copyText={getShareUrl(gameId)}
-        defaultLabel="Copy link"
-        successLabel="Link copied!"
-        errorLabel="Copy failed :("
+        defaultLabel="复制链接"
+        successLabel="链接已复制!"
+        errorLabel="复制失败，换个浏览器试试？"
       />
     );
   }

@@ -46,26 +46,26 @@ export default class WaitingForOther extends Component<Props, LocalState> {
 
     return (
       <Screen
-        title="Waiting..."
+        title="等待中..."
         message={
           <Fragment>
             <p>
-              Your friend is a bit
+              你的朋友属实
               <br />
-              slower. I know...
+              有点慢。这我知道...
             </p>
             <p>
-              <strong>Ping them to hurry!</strong>
+              <strong>催他快点!</strong>
             </p>
             {isOtherPlayerIdle && (
               <FadeIn>
                 <p>
-                  Maybe your friend
+                  也许你朋友
                   <br />
-                  left you hanging.
+                  放你鸽子了。
                   <br />
                   <Link href="/">
-                    <a>Join another game?</a>
+                    <a>加入另一个游戏？</a>
                   </Link>
                 </p>
               </FadeIn>
@@ -75,7 +75,7 @@ export default class WaitingForOther extends Component<Props, LocalState> {
         actions={[
           <Shake time={curPlayer.ping}>
             <Button disabled={disabled} onClick={onPing}>
-              Ping
+              催催
             </Button>
           </Shake>,
         ]}

@@ -399,7 +399,7 @@ class FlatrisGame extends Component<Props, LocalState> {
   renderMenuBtn() {
     return (
       <div className="menu-btn">
-        <Button onClick={this.handleMenu}>Menu</Button>
+        <Button onClick={this.handleMenu}>菜单</Button>
         <style jsx>{`
           .menu-btn {
             position: absolute;

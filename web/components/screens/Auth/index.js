@@ -141,10 +141,10 @@ class Auth extends Component<Props, LocalState> {
     return (
       <form onSubmit={this.handleGo}>
         <Screen
-          title="One sec..."
+          title="首先..."
           message={
             <Fragment>
-              <p onClick={this.focusOnNameField}>Enter your name</p>
+              <p onClick={this.focusOnNameField}>输入你的姓名</p>
               <p>
                 <input
                   type="text"
@@ -157,13 +157,13 @@ class Auth extends Component<Props, LocalState> {
                 />
               </p>
               <p>
-                <small>Fake names allowed ;-)</small>
+                <small>输个假名字也可以啦(/≧▽≦)/</small>
               </p>
             </Fragment>
           }
           actions={[
             <Button type="submit" disabled={!jsReady || !name || pendingAuth}>
-              Enter
+              好啦
             </Button>,
           ]}
         />

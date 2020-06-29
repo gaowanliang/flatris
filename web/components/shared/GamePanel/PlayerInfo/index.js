@@ -26,7 +26,7 @@ export default class PlayerInfo extends Component<Props> {
       <div className={classes} onClick={onSelect}>
         <div className="centered">
           <div className="player">{isPlayer1 ? '1p' : '2p'}</div>
-          <div className="insert-coin">insert coin</div>
+          <div className="insert-coin">加入</div>
         </div>
         <style jsx>{`
           .player-info {
@@ -107,24 +107,24 @@ export default class PlayerInfo extends Component<Props> {
         <div className="score">
           {showWins && (
             <div className="score-row">
-              <div className="label vcentered">Wins</div>
+              <div className="label vcentered">胜场</div>
               <div className="value vcentered">{wins}</div>
             </div>
           )}
           <div className="score-row">
-            <div className="label vcentered">Score</div>
+            <div className="label vcentered">得分</div>
             <div className="value vcentered">{humanizedScore}</div>
           </div>
           {!showWins && (
             <div className="score-row">
-              <div className="label vcentered">Lines</div>
+              <div className="label vcentered">消行</div>
               <div className="value vcentered">{lines}</div>
             </div>
           )}
         </div>
         {showReadyState && (
           <div className="status ready">
-            <span>Ready</span>
+            <span>已<br />准备</span>
           </div>
         )}
         <style jsx>{`
@@ -188,14 +188,14 @@ export default class PlayerInfo extends Component<Props> {
             right: 0;
             background: rgba(57, 147, 208, 0.85);
             color: #fff;
-            font-size: 1.2em;
+            font-size: 0.8em;
             font-weight: 600;
             text-transform: uppercase;
             text-align: center;
           }
           .ready span {
             position: absolute;
-            top: 50%;
+            top: 43%;
             left: 50%;
             transform: translate(-50%, -35%);
             text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);

@@ -14,29 +14,29 @@ export default class Multiplayer extends Component<Props> {
 
     return (
       <Screen
-        title="One vs one"
+        title="一对一战"
         message={
           <Fragment>
             <p>
               <span className="highlight">
-                Both players receive
+                两个玩家会
                 <br />
-                the same sequence of
+                得到相同的
                 <br />
-                geometric shapes.
+                方块序列。
               </span>
             </p>
             <p>
-              Each of you controls a<br />
-              separate game. You see
+              你们每个人都控制着<br />
+              一个独立的游戏。
               <br />
-              <strong>your rival's shadow</strong>,<br />
-              but you don't interact.
+              你能看到<strong>对手的影子</strong>,<br />
+              但你们之间不会产生互动。
             </p>
-            <p>Except in one way...</p>
+            <p>但在某种程度上...</p>
           </Fragment>
         }
-        actions={[<Button onClick={onNext}>OK...</Button>]}
+        actions={[<Button onClick={onNext}>好的...</Button>]}
       />
     );
   }

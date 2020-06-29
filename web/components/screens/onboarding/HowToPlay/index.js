@@ -15,33 +15,33 @@ export default class HowToPlay extends Component<Props> {
 
     return (
       <Screen
-        title="How to play"
+        title="怎么玩啊"
         message={
           <Fragment>
             <p>
-              Press <strong>left</strong> or <strong>right</strong> to
+              按 <strong>←</strong> 或者 <strong>→</strong> 来
               <br />
-              move the falling shape.
+              移动下落的形状方块。
               <br />
-              Press <strong>up</strong> to rotate and
+              按 <strong>↑</strong> 来 旋转方向 
               <br />
-              <strong>down</strong> to drop faster.
+              <strong>↓</strong> 来 使形状方块快速下落。
             </p>
             <p>
               <span className="highlight">
-                Use the keyboard on
+               桌面端请使用键盘
                 <br />
-                desktop or the screen
+                或者在移动端
                 <br />
-                buttons on mobile.
+                使用屏幕上的按钮
               </span>
             </p>
-            <p>Ready to kick ass?</p>
+            <p>准备好踢对方的屁股了吗?</p>
           </Fragment>
         }
         actions={[
           <Button disabled={disabled} onClick={onNext}>
-            Got it
+            开整
           </Button>,
         ]}
       />
